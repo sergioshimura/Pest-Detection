@@ -1,4 +1,3 @@
-
 # A RTK-based UAV System for Real-Time Pest Detection in Opuntia ficus-indica Crops
 
 This repository contains the code and resources for the project "A RTK-based UAV System for Real-Time Pest Detection in Opuntia ficus-indica Crops", as described in the paper by S. Shimura, A. Miyazaki, M. Frye, and R. Mansano.
@@ -80,10 +79,28 @@ pip install -r requirements.txt
 
 ## Usage
 
-1.  **Generate the Orthomosaic:** Use the images in the `data/raw_images` directory with WebODM to create a high-resolution map.
-2.  **Segment and Plan Routes:** Run the `notebooks/1_segment.ipynb` and `notebooks/2_route.ipynb` to generate the flight paths.
-3.  **Run Pest Detection:** Use the `scripts/yolo_fast.py` script with a video stream to perform real-time detection.
-4.  **Generate the Final Map:** Execute `scripts/geolocation.py` and `scripts/map_gen.py` to create the pest infestation map.
+### 1. High-Altitude Flight
+A high-altitude flight is performed to capture images of the entire crop area. These images will be used to create a high-resolution map of the field.
+![RTK Route](assets/Usage/1%20-%20rota%20RTK.png)
+
+### 2. Generate the Orthomosaic
+Use the captured images with WebODM to create a high-resolution orthomosaic map.
+![Orthomosaic](assets/Usage/2%20-%20orto.tif)
+
+### 3. Segment and Plan Routes
+Run the `notebooks/1_segment.ipynb` and `notebooks/2_route.ipynb` to process the orthomosaic. The Segment Anything Model (SAM) is used to segment the crop rows, and then a flight path is generated.
+![Segmentation](assets/Usage/3%20-%20imagem_segmentada_completa%20(3).png)
+![Route Planning](assets/Usage/4%20-%20WhatsApp%20Image%202025-08-18%20at%2011.42.45.jpeg)
+![Target Placement](assets/Usage/5%20-%20Figure5b.jpeg)
+
+### 4. Run Pest Detection
+A second drone flies the generated path at a lower altitude. The `scripts/yolo_fast.py` script processes the video stream to detect pests in real-time.
+![Detection 1](assets/Usage/6%20-%20Photo4ok.png)
+![Detection 2](assets/Usage/7%20-%20Photo5ok.png)
+
+### 5. Generate the Final Map
+Execute `scripts/geolocation.py` and `scripts/map_gen.py` to process the detection data and generate a final map showing the location of the pests.
+![Disease Map](assets/Usage/8%20-%20Disease%20map.png)
 
 ## Results
 
