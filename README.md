@@ -8,6 +8,13 @@ The cultivation of *Opuntia ficus-indica* (prickly pear cactus) is under critica
 
 This work is an extension of a successful indoor pilot project and aims to apply the system in a real-world field environment.
 
+## Recursos Multimédia
+
+Explore o projeto através de nossos recursos multimídia:
+
+*   **Podcast Explicativo:** Ouça uma discussão aprofundada sobre o projeto e seus impactos. [Drones IA, médicos de plantas: como funciona (Áudio)](Drones_IA_médicos_de_plantas__como_funciona.m4a)
+*   **Vídeo do Projeto:** Assista a uma apresentação visual do sistema em ação e seus resultados. [Combater Pragas do Céu (Vídeo)](Combater_Pragas_do_Céu.mp4)
+
 ## How It Works
 
 The system operates in two main stages, comprising four steps:
