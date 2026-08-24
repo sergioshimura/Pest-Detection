@@ -52,9 +52,10 @@ The system operates in two main stages, comprising four steps:
 ```
 .
 ├───README.md
-├───data/
-│   ├───raw_images/       # Raw images from high-altitude flights
-│   └───processed_maps/   # Orthomosaics and DSMs
+├───DATASET.md            # Why the training images are not redistributed
+├───LICENSE
+├───assets/
+│   └───field_targets/   # Field photographs of the printed targets on the cladodes
 ├───notebooks/
 │   ├───1_segment.ipynb   # Notebook for crop row segmentation with SAM
 │   └───2_route.ipynb     # Notebook for generating flight paths
@@ -65,6 +66,12 @@ The system operates in two main stages, comprising four steps:
 └───models/
     └───prickly_pear_health.pt  # Trained YOLOv8n model
 ```
+
+## Training data
+
+The training images are **not** included in this repository, because their
+licences do not allow redistribution. The trained weights, the code and the
+field photographs are provided instead. See [DATASET.md](DATASET.md).
 
 ## Installation
 

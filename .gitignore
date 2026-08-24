@@ -1,0 +1,9 @@
+# Training images are not redistributed - see DATASET.md
+dataset/
+dataset_local/
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.ipynb_checkpoints/
