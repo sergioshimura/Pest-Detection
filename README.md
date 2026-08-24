@@ -71,7 +71,8 @@ The system operates in two main stages, comprising four steps:
 
 The training images are **not** included in this repository, because their
 licences do not allow redistribution. The trained weights, the code and the
-field photographs are provided instead. See [DATASET.md](DATASET.md).
+field photographs are provided instead. See [DATASET.md](DATASET.md), and
+[NOTICE.md](NOTICE.md) for what each licence in this repository covers.
 
 ## Installation
 
