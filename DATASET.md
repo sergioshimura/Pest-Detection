@@ -1,6 +1,6 @@
 # About the training data
 
-The YOLOv8n weights in `models/prickly_pear_health.pt` were trained on a set of
+The YOLOv8n weights in `models/` were trained on a set of
 images of *Opuntia ficus-indica* showing damage by *Cactoblastis cactorum*,
 cochineal scale (*Dactylopius* sp.) and fungal lesions, assembled from publicly
 reachable web sources for research purposes.
@@ -17,6 +17,12 @@ What is provided instead:
 - the **field photographs** in `assets/field_targets/`, taken by the author,
   which document how the printed targets were placed on the cladodes during the
   validation campaign.
+
+`models/prickly_pear_health3.pt` is the model that was run on the Jetson Orin
+Nano during the field trial and that produced every detection reported in the
+manuscript. `models/prickly_pear_health.pt` is an earlier training run; it
+produces several times more detections on the same video and does not
+reproduce the reported results.
 
 Researchers who need the training set to reproduce the training run should
 contact the author, who keeps a provenance record of every file.

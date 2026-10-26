@@ -21,7 +21,7 @@ GSTREAMER_PIPELINE = (
 # SERIAL_BAUD = 115200
 
 # ===== YOLO =====
-model = YOLO("pricly_pear_health3.pt")
+model = YOLO("prickly_pear_health3.pt")
 class_names = model.names
 
 # Se CUDA estiver disponível, usa GPU

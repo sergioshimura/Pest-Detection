@@ -64,7 +64,8 @@ The system operates in two main stages, comprising four steps:
 │   ├───geolocation.py    # Script for cross-referencing timestamps and GPS data
 │   └───map_gen.py        # Script for generating the final pest infestation map
 └───models/
-    └───prickly_pear_health.pt  # Trained YOLOv8n model
+    ├───prickly_pear_health3.pt # YOLOv8n weights used in the field trial reported in the paper
+    └───prickly_pear_health.pt  # Earlier YOLOv8n weights (not used in the paper)
 ```
 
 ## Training data
