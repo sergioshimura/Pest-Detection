@@ -1,0 +1,16 @@
+{
+ "date": "2026-10-26 21:30:37 -0300",
+ "model": "prickly_pear_health3.pt",
+ "board": "NVIDIA Jetson Orin Nano Developer Kit",
+ "l4t": "# R36 (release), REVISION: 4.4, GCID: 41062509, BOARD: generic, EABI: aarch64, DATE: Mon Jun 16 16:07:13 UTC 2025",
+ "power_mode": "NV Power Mode: 15W",
+ "python": "3.10.12",
+ "torch": "2.3.0",
+ "cuda": "12.4",
+ "ultralytics": "8.4.51",
+ "opencv": "4.11.0",
+ "imgsz": 640,
+ "input": "3840x2160 frames, 2 s window around each target",
+ "warmup_frames": 50,
+ "loadavg_before": "1.85 0.60 0.26 1/770 637815"
+}
